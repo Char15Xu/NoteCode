@@ -1,11 +1,126 @@
 /* All styles used in the Quiz View should be defined here. */
 
-.quiz-container {
+.quiz_container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
     min-height: 600px;
     min-width: 300px;
-    overflow: scroll;
+    background-color: #fff;
+    border-radius: 50px;
 }
 
-.quiz-title p {
-    margin-block-end: 0.8em;
+.single_choice{
+    padding: 3em;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    background: #FCF7F3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
+.question_number{
+    display: grid;
+    border-radius: 50px;
+    font-size: large;
+}
+
+.question-title{
+    color: #FF7A2D;;
+}
+
+.single-choice-indicator{
+    font-size: 14px;
+    color: gray;
+}
+
+.question_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1.5em;
+    margin-top: 2.5em;
+    margin-left: .3em;
+    margin-right: 1em;
+}
+
+.single{
+    width: 36%;
+    height: 20px;
+    padding: 20px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: #EAE5E1;
+}
+
+.single:hover{
+    background: #FFC9AA;
+    border: 2px solid #ddd;
+    border-color: #FF7A2D;
+}
+
+.single-box{
+    opacity:0; 
+}
+
+.single-box:checked + .single {
+    font-weight: bold;
+    background-color: #FF7A2D;
+    color: white;
+  }
+
+.button-singlechoice-submit{
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #ee8f50;
+    border: 1px solid #fa6400;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin-top: 2em;
+    margin-bottom: .4em;
+    min-height: 3rem;
+    padding: calc(.3rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-singlechoice-submit:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-singglechoice-submit:hover {
+  transform: translateY(-1px);
+}
+
+.button-singlechoice-submit:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+
